@@ -8,7 +8,7 @@ abilities = [{
         }, {
             "target": "unit",
             "team": ["allies"],
-            "type": ["buff", "purge-negative"],
+            "type": ["positive-effect", "purge-negative"],
         }, {
             "target": "unit",
             "team": ["enemies"],
@@ -40,7 +40,7 @@ abilities = [{
         "attributes": [{
             "target": "none",
             "team": ["allies"],
-            "type": ["positive-buff", "physical-immunity"],
+            "type": ["positive-effect", "physical-immunity"],
         }, ],
     }, {
         "hero": "abbadon",
@@ -89,12 +89,12 @@ abilities = [{
         }, ],
     }, {
         "hero": "shadow-demon",
-        "name": "Shadow Demon",
+        "name": "Demonic Purge",
         "attributes": [{
             "target": "unit",
             "team": ["enemies"],
             "type": [
-                ["magic-damage", "purge-positive", "slow-move-speed"],
+                ["magic-damage", "purge-positive", "slow-move-speed", "negative-effect"],
             ],
         }, ],
     }, {
@@ -107,5 +107,42 @@ abilities = [{
                 ["magic-damage", "magic-immunity"],
             ],
         }],
+    }, {
+        "hero": "lifestealer",
+        "name": "Rage",
+        "attributes": [{
+            "target": "none",
+            "team": ["allies"],
+            "type": [
+                ["bonus-attack-speed", "magic-immunity"],
+            ],
+        }],
+    }, {
+        "hero": "lifestealer",
+        "name": "Open Wounds",
+        "attributes": [{
+            "target": "unit",
+            "team": ["enemies"],
+            "type": [
+                ["slow-move-speed", "negative-effect", "negative-lifesteal"],
+            ],
+        }],
+    }, {
+        "hero": "razor",
+        "name": "Unstable Current",
+        "attributes": [{
+            "target": "passive",
+            "team": ["enemies"],
+            "type": [
+                ["magic-damage", "slow-move-speed", "slow-attack-speed", "purge-positive"],
+            ],
+        }, {
+            "target": "passive",
+            "team": ["allies"],
+            "type": [
+                ["bonus-move-speed"],
+            ],
+        }],
     }
+
 ];

@@ -19,7 +19,9 @@
         <section id="selected_abilities">
             <h2>Selected Abilities</h2>
             <ul>
-                <li rv-each-ability="selected_abilities">
+                <li class="ability" rv-name="ability.name" rv-hero="ability.hero"
+                    rv-each-ability="selected_abilities">
+
                     <span>{ ability.name }</span>
                 </li>
             </ul>
@@ -27,7 +29,9 @@
         <section id="counter_abilities">
             <h2>Counter Abilities</h2>
             <ul>
-                <li rv-each-ability="counter_abilities">
+                <li class="ability" rv-name="ability.name" rv-hero="ability.hero"
+                    rv-each-ability="counter_abilities">
+
                     <span>{ ability.name }</span>
                 </li>
             </ul>

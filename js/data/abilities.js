@@ -11,12 +11,12 @@ abilities = [
             {
                 "target": "unit",
                 "team": ["allies"],
-                "type": ["negative-dispel"],
+                "type": ["buff", "purge-negative"],
             },
             {
                 "target": "unit",
                 "team": ["enemies"],
-                "type": ["positive-dispel"],
+                "type": ["purge-positive"],
             },
         ],
     },
@@ -54,7 +54,7 @@ abilities = [
             {
                 "target": "none",
                 "team": ["allies"],
-                "type": ["physical-immunity"],
+                "type": ["positive-buff", "physical-immunity"],
             },
         ],
     },
@@ -102,6 +102,19 @@ abilities = [
                 "team": ["enemies"],
                 "type": ["pierces-magic-immunity", "magic-damage"],
             },
+        ],
+    },
+    {
+        "hero": "oracle",
+        "name": "Fortune's End",
+        "attributes": [
+            {
+            "target": "unit",
+            "team": ["enemies"],
+            "type": [
+                ["channeled", "magic-damage", "purge-positive"],
+            ],
+        },
         ],
     },
 ];

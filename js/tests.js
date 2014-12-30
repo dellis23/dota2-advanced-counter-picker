@@ -8,14 +8,29 @@ function objectIn(object, array) {
     return found;
 }
 
+var AVAILABLE_TAGS = [
+    "magic-immunity", "positive-effect", "purge-positive",
+    "purge-negative", "pure-damage", "slow-attack-speed",
+    "slow-move-speed", "physical-immunity", "pierces-magic-immunity",
+    "bonus-move-speed", "bonus-attack-speed", "global", "damage-over-time",
+    "stun", "magic-damage", "channeled", "negative-effect", "negative-lifesteal",
+    "heal",
+];
+
 var tests = {
     "get_ability": function() {
         ability = get_ability(abilities, "omniknight", "Repel");
         return (ability.name == "Repel" && ability.hero == "omniknight")
     },
-    "counters_run_properly": function() {
-        ability = get_ability(abilities, "omniknight", "Repel");
-        return get_abilities_countering_ability(counters, abilities, ability).length == 8;
+    "only_known_tags": function() {
+        var used_tags = _.uniq(_.flatten(_.map(abilities, tags_for_ability)));
+        var extra_tags = _.difference(used_tags, AVAILABLE_TAGS);
+        if (extra_tags.length > 0) {
+            console.log("Used tags: " + used_tags);
+            console.log("Extra tags: " + extra_tags);
+            return false;
+        }
+        return true;
     },
     "all_counters_used": function() {
         var used_counters = [];

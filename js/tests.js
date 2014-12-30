@@ -15,7 +15,7 @@ var tests = {
     },
     "counters_run_properly": function() {
         ability = get_ability(abilities, "omniknight", "Repel");
-        return get_abilities_countering_ability(counters, abilities, ability).length == 5;
+        return get_abilities_countering_ability(counters, abilities, ability).length == 6;
     },
     "all_counters_used": function() {
         var used_counters = [];

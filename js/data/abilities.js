@@ -65,12 +65,12 @@ abilities = [
             {
                 "target": "passive",
                 "team": ["enemies"],
-                "type": ["slow-move-speed", "slow-attack-speed"],
+                "type": ["pierces-magic-immunity", "slow-move-speed", "slow-attack-speed"],
             },
             {
                 "target": "passive",
                 "team": ["allies"],
-                "type": ["bonus-move-speed", "bonus-attack-speed"],
+                "type": ["pierces-magic-immunity", "bonus-move-speed", "bonus-attack-speed"],
             },
         ],
     },

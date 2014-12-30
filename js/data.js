@@ -1,3 +1,7 @@
+//
+// Abilities
+//
+
 function get_ability(abilities, hero, name) {
     return _.first(
         _.filter(abilities, function(ability) {

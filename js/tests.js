@@ -22,6 +22,23 @@ var tests = {
         ability = get_ability(abilities, "omniknight", "Repel");
         return (ability.name == "Repel" && ability.hero == "omniknight")
     },
+    "simple_tag_check": function() {
+        var ability = get_ability(abilities, "omniknight", "Repel");
+        var found = tags_for_ability(ability);
+        var expected = [
+            "magic-immunity", "positive-effect",
+            "purge-negative", "purge-positive"
+        ];
+        var ok = (
+            _.union(expected, found).length == expected.length &&
+            _.intersection(expected, found).length == expected.length
+        )
+        if (!ok) {
+            console.log("Found tags: " + found);
+            console.log("Expected tags: " + expected);
+        }
+        return ok;
+    },
     "only_known_tags": function() {
         var used_tags = _.uniq(_.flatten(_.map(abilities, tags_for_ability)));
         var extra_tags = _.difference(used_tags, AVAILABLE_TAGS);

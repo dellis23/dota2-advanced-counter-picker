@@ -7,14 +7,7 @@ function get_ability(abilities, hero, name) {
 }
 
 function tags_for_ability(ability) {
-    return _.flatten(
-        _.map(
-            ability.attributes,
-            function(attributes) {
-                return attributes.type;
-            }
-        )
-    );
+    return ability.tags;
 }
 
 function ability_satisfies_tags(ability, tags) {

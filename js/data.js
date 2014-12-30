@@ -1,3 +1,11 @@
+function get_ability(abilities, hero, name) {
+    return _.first(
+        _.filter(abilities, function(ability) {
+            return (ability.hero == hero && ability.name == name);
+        })
+    );
+}
+
 function tags_for_ability(ability) {
     return _.flatten(
         _.map(

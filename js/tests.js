@@ -15,19 +15,24 @@ var tests = {
     },
     "counters_run_properly": function() {
         ability = get_ability(abilities, "omniknight", "Repel");
-        return get_abilities_countering_ability(counters, abilities, ability).length == 6;
+        return get_abilities_countering_ability(counters, abilities, ability).length == 7;
     },
     "all_counters_used": function() {
         var used_counters = [];
         for (var i = 0; i < abilities.length; i++) {
             var c = counters_for_ability(counters, abilities[i]);
             _.each(c, function(counter) {
-                if (!objectIn(c, used_counters)) {
-                    used_counters.push(c);
+                if (!objectIn(counter, used_counters)) {
+                    used_counters.push(counter);
                 }
             });
         }
-        return (_.flatten(used_counters).length == counters.length)
+        var passed = (_.flatten(used_counters).length == counters.length)
+        if (!passed) {
+            console.log("Used counters: ");
+            console.log(used_counters);
+        }
+        return passed;
     },
 };
 

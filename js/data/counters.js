@@ -6,4 +6,8 @@ var counters = [{
     "name": "Purge Enemy Buffs",
     "original_has": ["buff"],
     "counter_has": ["purge-positive"],
-}, ];
+}, {
+    "name": "Damage Through Magic Immunity",
+    "original_has": ["magic-immunity"],
+    "counter_has": ["pure-damage"],
+}];

@@ -9,12 +9,12 @@ function objectIn(object, array) {
 }
 
 var AVAILABLE_TAGS = [
-    "magic-immunity", "positive-effect", "purge-positive",
-    "purge-negative", "pure-damage", "slow-attack-speed",
+    "magic-immunity", "positive-effect",
+    "pure-damage", "slow-attack-speed",
     "slow-move-speed", "physical-immunity", "pierces-magic-immunity",
     "bonus-move-speed", "bonus-attack-speed", "global", "damage-over-time",
     "stun", "magic-damage", "channeled", "negative-effect", "negative-lifesteal",
-    "heal",
+    "heal", "purge", "dispellable"
 ];
 
 var tests = {
@@ -27,7 +27,7 @@ var tests = {
         var found = tags_for_ability(ability);
         var expected = [
             "magic-immunity", "positive-effect",
-            "purge-negative", "purge-positive"
+            "purge"
         ];
         var ok = (
             _.union(expected, found).length == expected.length &&

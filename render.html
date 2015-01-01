@@ -36,13 +36,23 @@
                 </li>
             </ul>
         </section>
+        <section id="available_heroes">
+            <h2>Available Heroes</h2>
+            <ul>
+                <li class="hero" rv-hero="hero"
+                    rv-each-hero="available_heroes">
+
+                    <span>{ hero }</span>
+                </li>
+            </ul>
+        </section>
         <section id="available_abilities">
             <h2>Available Abilities</h2>
             <ul>
                 <li class="ability" rv-name="ability.name" rv-hero="ability.hero"
                     rv-each-ability="available_abilities">
 
-                    <span >{ ability.name }</span>
+                    <span>{ ability.name }</span>
                 </li>
             </ul>
         </section>

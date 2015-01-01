@@ -4,6 +4,8 @@ var counter_abilities = [];
 
 var available_abilities = abilities;
 
+var available_heroes = heroes_from_abilities(abilities);
+
 function select_ability(ability_node) {
     selected_abilities.push(
         get_ability(
@@ -59,6 +61,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     );
 
     rivets.bind(
+        $('#available_heroes'), {
+            available_heroes: available_heroes
+       }
+    );
+
+    rivets.bind(
         $('#available_abilities'), {
             available_abilities: available_abilities
         }
@@ -66,6 +74,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     $(document).on("click", "#available_abilities .ability", function() {
         select_ability($(this));
+        recalculate_counters();
+    });
+
+    $(document).on("click", "#available_heroes .hero", function() {
+        _.each(
+            abilities_by_hero(abilities, $(this).attr("hero")),
+            function (ability) {
+                selected_abilities.push(ability);
+            }
+        );
         recalculate_counters();
     });
 

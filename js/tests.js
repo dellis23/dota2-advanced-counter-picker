@@ -20,7 +20,7 @@ var AVAILABLE_TAGS = [
 var tests = {
     "get_ability": function() {
         ability = get_ability(abilities, "omniknight", "Repel");
-        return (ability.name == "Repel" && ability.hero == "omniknight")
+        return (ability.name == "Repel" && ability.hero == "omniknight");
     },
     "simple_tag_check": function() {
         var ability = get_ability(abilities, "omniknight", "Repel");
@@ -59,18 +59,22 @@ var tests = {
                 }
             });
         }
-        var passed = (_.flatten(used_counters).length == counters.length)
+        var passed = (_.flatten(used_counters).length == counters.length);
         if (!passed) {
             console.log("Used counters: ");
             console.log(used_counters);
         }
         return passed;
     },
+    "a_lot_of_heroes_found": function() {
+        var heroes = heroes_from_abilities(abilities);
+        return heroes.length > 10 && heroes.length < 150;
+    }
 };
 
 function runTests() {
     passed = 0;
-    for (test_name in tests) {
+    for (var test_name in tests) {
         if (!tests[test_name]()) {
             console.log(test_name + " failed!");
         } else {

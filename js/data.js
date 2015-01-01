@@ -1,4 +1,20 @@
 //
+// Heroes
+//
+
+function heroes_from_abilities(abilities) {
+    return _.uniq(
+        _.map(
+            abilities,
+            function (ability) {
+                return ability.hero;
+            }
+        )
+    );
+}
+
+
+//
 // Abilities
 //
 
@@ -27,7 +43,16 @@ function abilities_by_tags(abilities, tags) {
     return _.filter(
         abilities,
         function(ability) {
-            return ability_satisfies_tags(ability, tags)
+            return ability_satisfies_tags(ability, tags);
+        }
+    );
+}
+
+function abilities_by_hero(abilities, hero) {
+    return _.filter(
+        abilities,
+        function (ability) {
+            return ability.hero == hero;
         }
     );
 }
@@ -40,7 +65,7 @@ function abilities_by_tags(abilities, tags) {
 function counter_abilities_for_counter(abilities, counter) {
     return _.filter(abilities, function(ability) {
         return ability_satisfies_tags(ability, counter.counter_has);
-    })
+    });
 }
 
 function counters_for_ability(counters, ability) {

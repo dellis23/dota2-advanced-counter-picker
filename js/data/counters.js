@@ -12,7 +12,7 @@ var counters = [
 {
   "name": "Damage Through Magic Immunity",
   "original_has": ["magic-immunity"],
-  "counter_has": ["pure-damage"]
+  "counter_has": ["pure-damage"],
 },
 {
   "name": "Global Physical Presence",

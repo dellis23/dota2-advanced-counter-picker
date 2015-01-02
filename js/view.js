@@ -39,6 +39,8 @@ var available_heroes = heroes_from_abilities(abilities);
 
 var enemy_heroes = [];
 
+var suggested_counters = [];
+
 $(function() {
 
     rivets.bind(
@@ -56,6 +58,12 @@ $(function() {
     rivets.bind(
         $('#enemy_heroes'), {
             enemy_heroes: enemy_heroes
+        }
+    );
+
+    rivets.bind(
+        $('#suggested_counters'), {
+            suggested_counters: suggested_counters
         }
     );
 
@@ -121,6 +129,18 @@ function recalculate_counters() {
             )
         ), function(ability) {
             counter_abilities.push(ability);
+        }
+    );
+
+    // Update the list of heroes suggested, based on these newly calculated
+    // abilities.
+    suggested_counters.length = 0;
+    suggested_counters.push();
+    suggested_counters.pop();
+
+    _.each(most_frequent_heroes(counter_abilities, 5),
+        function (hero) {
+            suggested_counters.push(hero);
         }
     );
 }

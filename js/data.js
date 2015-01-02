@@ -13,6 +13,18 @@ function heroes_from_abilities(abilities) {
     );
 }
 
+function most_frequent_heroes(abilities, n) {
+    /* abilities - a list of abilities to extract the heroes from */
+    return _.chain(abilities)
+        .countBy("hero")
+        .pairs()
+        .sortBy(1)
+        .reverse()
+        .pluck(0)
+        .first(n)
+        .value();
+}
+
 
 //
 // Abilities

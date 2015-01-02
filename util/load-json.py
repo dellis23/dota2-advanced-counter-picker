@@ -42,7 +42,6 @@ def _merge_dicts(i, j):
     return new
 
 
-
 def merge_duplicate_abilities(abilities):
     """
     Usage:
@@ -50,7 +49,6 @@ def merge_duplicate_abilities(abilities):
         abilities = merge_duplicate_abilities(abilities)
     """
     merged = []
-    new = []
     for i, i_item in enumerate(abilities):
         for j, j_item in enumerate(abilities):
             if j == i or j in merged or i in merged:

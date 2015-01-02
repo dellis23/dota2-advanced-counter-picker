@@ -504,21 +504,21 @@ var abilities = [
   "hero": "Nature's Prophet",
   "name": "Nature's Call",
   "tags": [
-    "jungler",
+    "jungler"
   ]
 },
 {
   "hero": "Nature's Prophet",
   "name": "Teleportation",
   "tags": [
-    "global-physical-presence",
+    "global-physical-presence"
   ]
 },
 {
   "hero": "Tinker",
   "name": "Rearm",
   "tags": [
-    "global-physical-presence",
+    "global-physical-presence"
   ]
 },
 {

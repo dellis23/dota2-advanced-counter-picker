@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <!-- Third-party -->
@@ -5,56 +6,77 @@
         <script src="js/underscore/underscore-min.js"></script>
         <script src="js/sightglass/index.js"></script>
         <script src="js/rivets/dist/rivets.min.js"></script>
+        <!-- ... bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Data -->
         <script src="js/data/abilities.js"></script>
         <script src="js/data/counters.js"></script>
 
         <!-- Local -->
+        <link rel="stylesheet" href="css/style.css">
         <script src="js/data.js"></script>
         <script src="js/tests.js"></script>
         <script src="js/view.js"></script>
     </head>
     <body>
-        <section id="selected_abilities">
-            <h2>Selected Abilities</h2>
-            <ul>
-                <li class="ability" rv-name="ability.name" rv-hero="ability.hero"
-                    rv-each-ability="selected_abilities">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
 
-                    <span>{ ability.name }</span>
-                </li>
-            </ul>
-        </section>
-        <section id="counter_abilities">
-            <h2>Counter Abilities</h2>
-            <ul>
-                <li class="ability" rv-name="ability.name" rv-hero="ability.hero"
-                    rv-each-ability="counter_abilities">
+                    <div id="selected_heroes" class="row hero-bar">
 
-                    <span>{ ability.name }</span>
-                </li>
-            </ul>
-        </section>
-        <section id="available_heroes">
-            <h2>Available Heroes</h2>
-            <ul>
-                <li class="hero" rv-hero="hero"
-                    rv-each-hero="available_heroes">
+                    </div>
 
-                    <span>{ hero }</span>
-                </li>
-            </ul>
-        </section>
-        <section id="available_abilities">
-            <h2>Available Abilities</h2>
-            <ul>
-                <li class="ability" rv-name="ability.name" rv-hero="ability.hero"
-                    rv-each-ability="available_abilities">
+                    <div id="available_heroes" class="row hero-selector">
+                        <ul>
+                            <li class="hero" rv-hero="hero"
+                                rv-each-hero="available_heroes">
 
-                    <span>{ ability.name }</span>
-                </li>
-            </ul>
-        </section>
+                                <img rv-src="hero"><span>{ hero }</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="enemy_heroes" class="row hero-bar">
+
+                    </div>
+
+                </div>
+            </div>
+            <section id="selected_abilities">
+                <h2>Selected Abilities</h2>
+                <ul>
+                    <li class="ability" rv-name="ability.name" rv-hero="ability.hero"
+                        rv-each-ability="selected_abilities">
+
+                        <span>{ ability.name }</span>
+                    </li>
+                </ul>
+            </section>
+            <section id="counter_abilities">
+                <h2>Counter Abilities</h2>
+                <ul>
+                    <li class="ability" rv-name="ability.name" rv-hero="ability.hero"
+                        rv-each-ability="counter_abilities">
+
+                        <span>{ ability.name }</span>
+                    </li>
+                </ul>
+            </section>
+            <section id="available_abilities">
+                <h2>Available Abilities</h2>
+                <ul>
+                    <li class="ability" rv-name="ability.name" rv-hero="ability.hero"
+                        rv-each-ability="available_abilities">
+
+                        <span>{ ability.name }</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </body>
 </html>

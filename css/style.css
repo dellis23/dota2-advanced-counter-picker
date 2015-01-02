@@ -1,0 +1,295 @@
+.hero-selector li.hero[hero=windrunner] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/windrunner_hphover.png);
+}
+.hero-selector li.hero[hero=vengefulspirit] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/vengefulspirit_hphover.png);
+}
+.hero-selector li.hero[hero=medusa] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/medusa_hphover.png);
+}
+.hero-selector li.hero[hero=undying] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/undying_hphover.png);
+}
+.hero-selector li.hero[hero=riki] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/riki_hphover.png);
+}
+.hero-selector li.hero[hero=storm_spirit] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/storm_spirit_hphover.png);
+}
+.hero-selector li.hero[hero=tusk] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/tusk_hphover.png);
+}
+.hero-selector li.hero[hero=sniper] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/sniper_hphover.png);
+}
+.hero-selector li.hero[hero=pugna] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/pugna_hphover.png);
+}
+.hero-selector li.hero[hero=ogre_magi] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/ogre_magi_hphover.png);
+}
+.hero-selector li.hero[hero=bane] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/bane_hphover.png);
+}
+.hero-selector li.hero[hero=dark_seer] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/dark_seer_hphover.png);
+}
+.hero-selector li.hero[hero=ancient_apparition] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/ancient_apparition_hphover.png);
+}
+.hero-selector li.hero[hero=lone_druid] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/lone_druid_hphover.png);
+}
+.hero-selector li.hero[hero=shadow_demon] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/shadow_demon_hphover.png);
+}
+.hero-selector li.hero[hero=batrider] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/batrider_hphover.png);
+}
+.hero-selector li.hero[hero=abaddon] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/abaddon_hphover.png);
+}
+.hero-selector li.hero[hero=kunkka] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/kunkka_hphover.png);
+}
+.hero-selector li.hero[hero=phantom_lancer] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/phantom_lancer_hphover.png);
+}
+.hero-selector li.hero[hero=weaver] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/weaver_hphover.png);
+}
+.hero-selector li.hero[hero=clinkz] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/clinkz_hphover.png);
+}
+.hero-selector li.hero[hero=earthshaker] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/earthshaker_hphover.png);
+}
+.hero-selector li.hero[hero=lion] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/lion_hphover.png);
+}
+.hero-selector li.hero[hero=chen] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/chen_hphover.png);
+}
+.hero-selector li.hero[hero=disruptor] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/disruptor_hphover.png);
+}
+.hero-selector li.hero[hero=venomancer] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/venomancer_hphover.png);
+}
+.hero-selector li.hero[hero=rattletrap] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/rattletrap_hphover.png);
+}
+.hero-selector li.hero[hero=invoker] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/invoker_hphover.png);
+}
+.hero-selector li.hero[hero=juggernaut] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/juggernaut_hphover.png);
+}
+.hero-selector li.hero[hero=leshrac] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/leshrac_hphover.png);
+}
+.hero-selector li.hero[hero=ursa] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/ursa_hphover.png);
+}
+.hero-selector li.hero[hero=lycan] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/lycan_hphover.png);
+}
+.hero-selector li.hero[hero=meepo] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/meepo_hphover.png);
+}
+.hero-selector li.hero[hero=elder_titan] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/elder_titan_hphover.png);
+}
+.hero-selector li.hero[hero=centaur] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/centaur_hphover.png);
+}
+.hero-selector li.hero[hero=tinker] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/tinker_hphover.png);
+}
+.hero-selector li.hero[hero=broodmother] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/broodmother_hphover.png);
+}
+.hero-selector li.hero[hero=dragon_knight] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/dragon_knight_hphover.png);
+}
+.hero-selector li.hero[hero=doom_bringer] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/doom_bringer_hphover.png);
+}
+.hero-selector li.hero[hero=huskar] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/huskar_hphover.png);
+}
+.hero-selector li.hero[hero=witch_doctor] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/witch_doctor_hphover.png);
+}
+.hero-selector li.hero[hero=omniknight] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/omniknight_hphover.png);
+}
+.hero-selector li.hero[hero=terrorblade] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/terrorblade_hphover.png);
+}
+.hero-selector li.hero[hero=alchemist] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/alchemist_hphover.png);
+}
+.hero-selector li.hero[hero=slark] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/slark_hphover.png);
+}
+.hero-selector li.hero[hero=mirana] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/mirana_hphover.png);
+}
+.hero-selector li.hero[hero=skeleton_king] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/skeleton_king_hphover.png);
+}
+.hero-selector li.hero[hero=life_stealer] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/life_stealer_hphover.png);
+}
+.hero-selector li.hero[hero=puck] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/puck_hphover.png);
+}
+.hero-selector li.hero[hero=morphling] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/morphling_hphover.png);
+}
+.hero-selector li.hero[hero=luna] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/luna_hphover.png);
+}
+.hero-selector li.hero[hero=queenofpain] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/queenofpain_hphover.png);
+}
+.hero-selector li.hero[hero=razor] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/razor_hphover.png);
+}
+.hero-selector li.hero[hero=necrolyte] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/necrolyte_hphover.png);
+}
+.hero-selector li.hero[hero=skywrath_mage] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/skywrath_mage_hphover.png);
+}
+.hero-selector li.hero[hero=tiny] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/tiny_hphover.png);
+}
+.hero-selector li.hero[hero=pudge] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/pudge_hphover.png);
+}
+.hero-selector li.hero[hero=spirit_breaker] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/spirit_breaker_hphover.png);
+}
+.hero-selector li.hero[hero=nyx_assassin] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/nyx_assassin_hphover.png);
+}
+.hero-selector li.hero[hero=gyrocopter] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/gyrocopter_hphover.png);
+}
+.hero-selector li.hero[hero=silencer] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/silencer_hphover.png);
+}
+.hero-selector li.hero[hero=enigma] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/enigma_hphover.png);
+}
+.hero-selector li.hero[hero=bounty_hunter] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/bounty_hunter_hphover.png);
+}
+.hero-selector li.hero[hero=lina] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/lina_hphover.png);
+}
+.hero-selector li.hero[hero=antimage] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/antimage_hphover.png);
+}
+.hero-selector li.hero[hero=sand_king] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/sand_king_hphover.png);
+}
+.hero-selector li.hero[hero=wisp] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/wisp_hphover.png);
+}
+.hero-selector li.hero[hero=nevermore] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/nevermore_hphover.png);
+}
+.hero-selector li.hero[hero=bristleback] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/bristleback_hphover.png);
+}
+.hero-selector li.hero[hero=warlock] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/warlock_hphover.png);
+}
+.hero-selector li.hero[hero=keeper_of_the_light] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/keeper_of_the_light_hphover.png);
+}
+.hero-selector li.hero[hero=legion_commander] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/legion_commander_hphover.png);
+}
+.hero-selector li.hero[hero=slardar] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/slardar_hphover.png);
+}
+.hero-selector li.hero[hero=treant] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/treant_hphover.png);
+}
+.hero-selector li.hero[hero=death_prophet] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/death_prophet_hphover.png);
+}
+.hero-selector li.hero[hero=tidehunter] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/tidehunter_hphover.png);
+}
+.hero-selector li.hero[hero=earth_spirit] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/earth_spirit_hphover.png);
+}
+.hero-selector li.hero[hero=furion] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/furion_hphover.png);
+}
+.hero-selector li.hero[hero=rubick] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/rubick_hphover.png);
+}
+.hero-selector li.hero[hero=enchantress] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/enchantress_hphover.png);
+}
+.hero-selector li.hero[hero=dazzle] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/dazzle_hphover.png);
+}
+.hero-selector li.hero[hero=troll_warlord] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/troll_warlord_hphover.png);
+}
+.hero-selector li.hero[hero=chaos_knight] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/chaos_knight_hphover.png);
+}
+.hero-selector li.hero[hero=shadow_shaman] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/shadow_shaman_hphover.png);
+}
+.hero-selector li.hero[hero=phoenix] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/phoenix_hphover.png);
+}
+.hero-selector li.hero[hero=templar_assassin] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/templar_assassin_hphover.png);
+}
+.hero-selector li.hero[hero=beastmaster] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/beastmaster_hphover.png);
+}
+.hero-selector li.hero[hero=bloodseeker] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/bloodseeker_hphover.png);
+}
+.hero-selector li.hero[hero=sven] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/sven_hphover.png);
+}
+.hero-selector li.hero[hero=shredder] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/shredder_hphover.png);
+}
+.hero-selector li.hero[hero=jakiro] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/jakiro_hphover.png);
+}
+.hero-selector li.hero[hero=viper] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/viper_hphover.png);
+}
+.hero-selector li.hero[hero=naga_siren] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/naga_siren_hphover.png);
+}
+.hero-selector li.hero[hero=spectre] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/spectre_hphover.png);
+}
+.hero-selector li.hero[hero=axe] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/axe_hphover.png);
+}
+.hero-selector li.hero[hero=oracle] {
+    background: url(http://cdn.dota2.com/apps/dota2/images/heroes/oracle_hphover.png);
+}
+.hero-selector li.hero {
+    text-indent: -9999px;
+    width: 54px;
+    height: 30px;
+    background-size: 54px 30px !important;
+    float: left;
+}

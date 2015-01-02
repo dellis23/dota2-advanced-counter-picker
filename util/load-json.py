@@ -61,6 +61,16 @@ def merge_duplicate_abilities(abilities):
     return [v for i, v in enumerate(abilities) if i not in merged]
 
 
+def fix_hero_names(abilities):
+    """
+    abilities = fix_hero_names(abilities)
+    """
+    for i, item in enumerate(abilities):
+        abilities[i]['hero'] = item['hero'].lower().replace(' ', '_').replace(
+            '-', '_')
+    return abilities
+
+
 abilities = load_json("abilities.js", ["var abilities = ", ";"])
 
 write_abilities = lambda: write_json(

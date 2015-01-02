@@ -78,6 +78,24 @@ $(function() {
         }
     });
 
+    $(document).on("click", "#selected_heroes .hero", function(e) {
+        selected_heroes.splice(
+            selected_heroes.indexOf(
+                $(this).attr("hero")
+            ),
+            1
+        );
+    });
+
+    $(document).on("click", "#enemy_heroes .hero", function(e) {
+        enemy_heroes.splice(
+            enemy_heroes.indexOf(
+                $(this).attr("hero")
+            ),
+            1
+        );
+    });
+
 });
 
 

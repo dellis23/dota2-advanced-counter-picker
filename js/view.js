@@ -62,6 +62,9 @@ $(function() {
     $(document).on("click", "#available_heroes .hero", function(e) {
         // Normal click
         if (!e.shiftKey) { 
+            if (selected_heroes.length == 5) {
+                return;
+            }
             _.each(
                 abilities_by_hero(abilities, $(this).attr("hero")),
                 function (ability) {
@@ -74,6 +77,9 @@ $(function() {
 
         // Shift click
         if (e.shiftKey) {
+            if (enemy_heroes.length == 5) {
+                return;
+            }
             enemy_heroes.push($(this).attr("hero"));
         }
     });

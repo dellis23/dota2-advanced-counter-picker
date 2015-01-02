@@ -24,25 +24,37 @@
     </head>
     <body>
         <div class="container">
-            <div class="row">
+            <div class="row noselect">
                 <div class="col-md-8">
 
-                    <div id="selected_heroes" class="row hero-bar">
-
-                    </div>
-
-                    <div id="available_heroes" class="row hero-selector">
+                    <div id="selected_heroes" class="row hero-selector">
                         <ul>
                             <li class="hero" rv-hero="hero"
-                                rv-each-hero="available_heroes">
+                                rv-each-hero="selected_heroes">
 
-                                <img rv-src="hero"><span>{ hero }</span>
+                                <span>{ hero }</span>
                             </li>
                         </ul>
                     </div>
 
-                    <div id="enemy_heroes" class="row hero-bar">
+                    <div id="available_heroes" class="row hero-selector hero-selector-small">
+                        <ul>
+                            <li class="hero" rv-hero="hero"
+                                rv-each-hero="available_heroes">
 
+                                <span>{ hero }</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="enemy_heroes" class="row hero-selector">
+                        <ul>
+                            <li class="hero" rv-hero="hero"
+                                rv-each-hero="enemy_heroes">
+
+                                <span>{ hero }</span>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>

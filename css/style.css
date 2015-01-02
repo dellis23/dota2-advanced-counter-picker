@@ -1,3 +1,15 @@
+/* Since users will be shift-clicking to add enemy heroes, we don't want highlighting
+ * in some areas
+ */
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .hero-selector li.hero[hero=windrunner] {
     background: url(http://cdn.dota2.com/apps/dota2/images/heroes/windrunner_hphover.png);
 }
@@ -288,8 +300,14 @@
 }
 .hero-selector li.hero {
     text-indent: -9999px;
+    float: left;
+    cursor: pointer;
+    width: 127px;
+    height: 71px;
+    background-size: 127px 71px !important;
+}
+.hero-selector-small li.hero {
     width: 54px;
     height: 30px;
     background-size: 54px 30px !important;
-    float: left;
 }

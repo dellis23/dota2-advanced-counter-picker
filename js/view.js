@@ -1,10 +1,12 @@
+//
+// Abilities
+//
+
 var selected_abilities = [];
 
 var counter_abilities = [];
 
 var available_abilities = abilities;
-
-var available_heroes = heroes_from_abilities(abilities);
 
 function select_ability(ability_node) {
     selected_abilities.push(
@@ -25,6 +27,59 @@ function deselect_ability(ability_node) {
         }
     }
 }
+
+
+//
+// Heroes
+// 
+
+var selected_heroes = [];
+
+var available_heroes = heroes_from_abilities(abilities);
+
+var enemy_heroes = [];
+
+$(function() {
+
+    rivets.bind(
+        $('#selected_heroes'), {
+            selected_heroes: selected_heroes
+        }
+    );
+
+    rivets.bind(
+        $('#available_heroes'), {
+            available_heroes: available_heroes
+       }
+    );
+
+    rivets.bind(
+        $('#enemy_heroes'), {
+            enemy_heroes: enemy_heroes
+        }
+    );
+
+    $(document).on("click", "#available_heroes .hero", function(e) {
+        // Normal click
+        if (!e.shiftKey) { 
+            _.each(
+                abilities_by_hero(abilities, $(this).attr("hero")),
+                function (ability) {
+                    selected_abilities.push(ability);
+                }
+            );
+            selected_heroes.push($(this).attr("hero"));
+            recalculate_counters();
+        }
+
+        // Shift click
+        if (e.shiftKey) {
+            enemy_heroes.push($(this).attr("hero"));
+        }
+    });
+
+});
+
 
 function recalculate_counters() {
     // Can't just clear the array or rivets won't pick up on the change
@@ -61,12 +116,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     );
 
     rivets.bind(
-        $('#available_heroes'), {
-            available_heroes: available_heroes
-       }
-    );
-
-    rivets.bind(
         $('#available_abilities'), {
             available_abilities: available_abilities
         }
@@ -74,16 +123,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     $(document).on("click", "#available_abilities .ability", function() {
         select_ability($(this));
-        recalculate_counters();
-    });
-
-    $(document).on("click", "#available_heroes .hero", function() {
-        _.each(
-            abilities_by_hero(abilities, $(this).attr("hero")),
-            function (ability) {
-                selected_abilities.push(ability);
-            }
-        );
         recalculate_counters();
     });
 

@@ -14,7 +14,8 @@ var AVAILABLE_TAGS = [
     "slow-move-speed", "physical-immunity", "pierces-magic-immunity",
     "bonus-move-speed", "bonus-attack-speed", "global", "damage-over-time",
     "stun", "magic-damage", "channeled", "negative-effect", "negative-lifesteal",
-    "heal", "purge", "dispellable", "global-physical-presence",
+    "heal", "purge", "dispellable", "global-physical-presence", "jungler",
+    "jungle-blocker"
 ];
 
 var tests = {

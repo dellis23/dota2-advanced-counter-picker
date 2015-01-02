@@ -9,6 +9,13 @@ var abilities = [
   ]
 },
 {
+  "hero": "Riki",
+  "name": "Permanent Invisibility",
+  "tags": [
+    "jungle-blocker"
+  ]
+},
+{
   "hero": "omniknight",
   "name": "Purification",
   "tags": [
@@ -237,7 +244,7 @@ var abilities = [
   "hero": "Bounty Hunter",
   "name": "Shadow Walk",
   "tags": [
-    "dispellable"
+    "dispellable", "jungle-blocker"
   ]
 },
 {
@@ -259,6 +266,13 @@ var abilities = [
   "name": "Spawn Spiderlings",
   "tags": [
     "dispellable"
+  ]
+},
+{
+  "hero": "Broodmother",
+  "name": "Spin Web",
+  "tags": [
+    "jungle-blocker"
   ]
 },
 {
@@ -286,7 +300,7 @@ var abilities = [
   "hero": "Clinkz",
   "name": "Skeleton Walk",
   "tags": [
-    "dispellable", "global-physical-presence"
+    "dispellable", "global-physical-presence", "jungle-blocker"
   ]
 },
 {
@@ -432,9 +446,37 @@ var abilities = [
 },
 {
   "hero": "Enchantress",
+  "name": "Enchant",
+  "tags": [
+    "jungler"
+  ]
+},
+{
+  "hero": "Enchantress",
   "name": "Nature's Attendants",
   "tags": [
     "dispellable"
+  ]
+},
+{
+  "hero": "Treant Protector",
+  "name": "Nature's Guise",
+  "tags": [
+    "jungle-blocker"
+  ]
+},
+{
+  "hero": "Lifestealer",
+  "name": "Feast",
+  "tags": [
+    "jungler"
+  ]
+},
+{
+  "hero": "Enigma",
+  "name": "Demonic Conversion",
+  "tags": [
+    "jungler"
   ]
 },
 {
@@ -456,6 +498,13 @@ var abilities = [
   "name": "Homing Missile",
   "tags": [
     "dispellable"
+  ]
+},
+{
+  "hero": "Nature's Prophet",
+  "name": "Nature's Call",
+  "tags": [
+    "jungler",
   ]
 },
 {
@@ -637,7 +686,7 @@ var abilities = [
   "hero": "Lycan",
   "name": "Summon Wolves",
   "tags": [
-    "global-physical-presence"
+    "global-physical-presence", "jungler"
   ]
 },
 {
@@ -735,7 +784,7 @@ var abilities = [
   "hero": "Nyx Assassin",
   "name": "Vendetta",
   "tags": [
-    "dispellable"
+    "dispellable", "jungle-blocker"
   ]
 },
 {
@@ -991,6 +1040,13 @@ var abilities = [
   ]
 },
 {
+  "hero": "Chen",
+  "name": "Holy Persuasion",
+  "tags": [
+    "jungler"
+  ]
+},
+{
   "hero": "Sven",
   "name": "God's Strength",
   "tags": [
@@ -1106,7 +1162,14 @@ var abilities = [
   "hero": "Ursa",
   "name": "Fury Swipes",
   "tags": [
-    "dispellable"
+    "dispellable", "jungler"
+  ]
+},
+{
+  "hero": "Lone Druid",
+  "name": "Summon Spirit Bear",
+  "tags": [
+    "dispellable", "jungler"
   ]
 },
 {

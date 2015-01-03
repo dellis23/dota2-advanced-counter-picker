@@ -122,7 +122,7 @@ function recalculate_counters() {
 
     // Update the list of heroes suggested, based on these newly calculated
     // abilities.
-    suggested_counters = [];
+    suggested_counters.splice(0, suggested_counters.length);
     suggested_counters.push();
     suggested_counters.pop();
 

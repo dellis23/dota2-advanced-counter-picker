@@ -6,28 +6,6 @@ var selected_abilities = [];
 
 var counter_abilities = [];
 
-var available_abilities = abilities;
-
-function select_ability(ability_node) {
-    selected_abilities.push(
-        get_ability(
-            abilities, ability_node.attr("hero"), ability_node.attr("name")
-        )
-    );
-}
-
-function deselect_ability(ability_node) {
-    for (var i = 0; i < selected_abilities.length; i++) {
-        if (
-            selected_abilities[i].name == ability_node.attr("name") &&
-            selected_abilities[i].hero == ability_node.attr("hero")
-        ) {
-            selected_abilities.splice(i, 1);
-            break;
-        }
-    }
-}
-
 
 //
 // Heroes
@@ -73,12 +51,6 @@ $(function() {
             if (selected_heroes.length == 5) {
                 return;
             }
-            _.each(
-                abilities_by_hero(abilities, $(this).attr("hero")),
-                function (ability) {
-                    selected_abilities.push(ability);
-                }
-            );
             selected_heroes.push($(this).attr("hero"));
             recalculate_counters();
         }
@@ -99,6 +71,7 @@ $(function() {
             ),
             1
         );
+        recalculate_counters();
     });
 
     $(document).on("click", "#enemy_heroes .hero", function(e) {
@@ -115,9 +88,24 @@ $(function() {
 
 function recalculate_counters() {
     // Can't just clear the array or rivets won't pick up on the change
-    counter_abilities.length = 0;
+    counter_abilities.splice(0, counter_abilities.length);
     counter_abilities.push();
     counter_abilities.pop();
+    selected_abilities.splice(0, selected_abilities.length);
+    selected_abilities.push();
+    selected_abilities.pop();
+
+    _.each(
+        selected_heroes,
+        function (hero) {
+            _.each(
+                abilities_by_hero(abilities, hero),
+                function (ability) {
+                    selected_abilities.push(ability);
+                }
+            );
+        }
+    );
 
     _.each(
         _.flatten(
@@ -134,7 +122,7 @@ function recalculate_counters() {
 
     // Update the list of heroes suggested, based on these newly calculated
     // abilities.
-    suggested_counters.length = 0;
+    suggested_counters = [];
     suggested_counters.push();
     suggested_counters.pop();
 
@@ -158,21 +146,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
             counter_abilities: counter_abilities
         }
     );
-
-    rivets.bind(
-        $('#available_abilities'), {
-            available_abilities: available_abilities
-        }
-    );
-
-    $(document).on("click", "#available_abilities .ability", function() {
-        select_ability($(this));
-        recalculate_counters();
-    });
-
-    $(document).on("click", "#selected_abilities .ability", function() {
-        deselect_ability($(this));
-        recalculate_counters();
-    });
 
 });

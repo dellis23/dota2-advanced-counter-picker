@@ -98,3 +98,47 @@ function get_abilities_countering_ability(counters, abilities, ability) {
     );
     return abilities;
 }
+
+function explanation_for_counter(original_ability, counter, counter_ability) {
+    var replacements = {
+        "{ original_hero }": original_ability.hero,
+        "{ original_ability }": original_ability.name,
+        "{ counter_ability }": counter_ability.name,
+        "{ counter_hero }": counter_ability.hero
+    };
+    return counter.explanation.replace(/{ \w+ }/g, function(all) {
+           return replacements[all] || all;
+    });
+}
+
+function explanations_for_hero_counters(original_hero, counter_hero) {
+    var explanations = [];
+    _.each(
+        abilities_by_hero(abilities, original_hero),
+        function (original_ability) {
+            _.each(
+                counters_for_ability(
+                    counters,
+                    original_ability
+                ),
+                function (counter) {
+                    _.each(
+                        get_abilities_countering_ability(
+                            [counter],
+                            abilities_by_hero(abilities, counter_hero), 
+                            original_ability
+                        ),
+                        function (counter_ability) {
+                            explanations.push(
+                                explanation_for_counter(
+                                    original_ability, counter, counter_ability
+                                )
+                            );
+                        }
+                    );
+                }
+            );
+        }
+    );
+    return explanations;
+}

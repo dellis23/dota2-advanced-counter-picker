@@ -19,6 +19,8 @@ var enemy_heroes = [];
 
 var suggested_counters = [];
 
+var suggestion_explanations = [];
+
 $(function() {
 
     rivets.bind(
@@ -131,6 +133,14 @@ function recalculate_counters() {
             suggested_counters.push(hero);
         }
     );
+
+    //
+    // Suggestion Explanations
+    //
+    suggestion_explanations.splice(0, suggestion_explanations.length);
+    suggestion_explanations.push();
+    suggestion_explanations.pop();
+
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {

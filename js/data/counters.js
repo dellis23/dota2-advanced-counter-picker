@@ -14,15 +14,18 @@ var counters = [
 {
   "name": "Damage Through Magic Immunity",
   "original_has": ["magic-immunity"],
-  "counter_has": ["pure-damage"]
+  "counter_has": ["pure-damage"],
+  "explanation": "{ counter_hero }'s { counter_ability } damages through { original_hero }'s magic immunity spell { original_ability }"
 },
 {
   "name": "Jungle Blockers (via ward placement)",
   "original_has": ["jungler"],
-  "counter_has": ["jungle-blocker"]
+  "counter_has": ["jungle-blocker"],
+  "explanation": "{ counter_hero }'s can easily place wards with { counter_ability }, hindering { original_hero }'s ability to jungle."
 },
 {
   "name": "Global Physical Presence",
   "original_has": ["global-physical-presence"],
-  "counter_has": ["global-physical-presence"]
+  "counter_has": ["global-physical-presence"],
+  "explanation": "{ counter_hero } can easily get around the map using { counter_ability }, letting them respond quickly to { original_hero }'s movements with { original_ability }"
 }];

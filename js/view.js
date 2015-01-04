@@ -47,6 +47,12 @@ $(function() {
         }
     );
 
+    rivets.bind(
+        $('#suggestion_explanations'), {
+            suggestion_explanations: suggestion_explanations
+        }
+    );
+
     $(document).on("click", "#available_heroes .hero", function(e) {
         // Normal click
         if (!e.shiftKey) { 
@@ -87,6 +93,15 @@ $(function() {
 
 });
 
+function cartesianProductOf() {
+    return _.reduce(arguments, function(a, b) {
+        return _.flatten(_.map(a, function(x) {
+            return _.map(b, function(y) {
+                return x.concat([y]);
+            });
+        }), true);
+    }, [ [] ]);
+}
 
 function recalculate_counters() {
     // Can't just clear the array or rivets won't pick up on the change
@@ -140,6 +155,17 @@ function recalculate_counters() {
     suggestion_explanations.splice(0, suggestion_explanations.length);
     suggestion_explanations.push();
     suggestion_explanations.pop();
+    _.each(
+        cartesianProductOf(selected_heroes, suggested_counters),
+        function (combo) {
+            _.each(
+                explanations_for_hero_counters(combo[0], combo[1]),
+                function (explanation) {
+                    suggestion_explanations.push(explanation);
+                }
+            );
+        }
+    );
 
 }
 

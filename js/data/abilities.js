@@ -691,7 +691,6 @@ var abilities = [
     "hero": "lycan",
     "name": "Summon Wolves",
     "tags": [
-      "global-physical-presence",
       "jungler"
     ]
   },
